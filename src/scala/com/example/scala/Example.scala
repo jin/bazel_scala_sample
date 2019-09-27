@@ -1,7 +1,7 @@
 package com.example.scala
 
 import akka.http.scaladsl.ClientTransport
-import com.second.party.example.scala.SecondPartyExample
+import akka.http.scaladsl.model.Uri.ParsingMode
 import packaaaa.src.scala.infra.Infra
 
 object Example extends App {
@@ -9,5 +9,6 @@ object Example extends App {
   println("This is just an example...")
 
   println(Infra.Text)
-  SecondPartyExample.main(Array())
+
+  println(classOf[ParsingMode].getName())
 }
