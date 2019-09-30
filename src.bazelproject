@@ -1,6 +1,8 @@
+targets:
+  src/scala/...
+
 directories:
-  src
+  .
 
 additional_languages:
   scala
-
